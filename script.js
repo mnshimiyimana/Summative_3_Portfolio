@@ -36,3 +36,18 @@ document.addEventListener("DOMContentLoaded", function () {
     messageInput.value = formData.message;
   }
 });
+
+$(document).ready(function () {
+  // Smooth scrolling for navbar links
+  $(".nav-link").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 300, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
