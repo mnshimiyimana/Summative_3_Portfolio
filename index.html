@@ -16,7 +16,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
-    <base href="/repository/" />
   </head>
   <body class="bg-dark-grey text-grey">
     <!-- Navbar -->
@@ -59,7 +58,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero py-5 bg-dark text-white">
+    <section class="hero py-5 bg-dark text-white" id="what">
       <div class="container">
         <div class="text-center">
           <h5 class="hero-text">HELLO I'M</h5>
@@ -69,7 +68,15 @@
             quisquam est, qui dolorem ipsum quia dolor si voluptatem quia
             voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
           </p>
-          <button class="btn btn-warning py-2 scale-70">Dowload CV</button>
+          <button class="btn btn-warning scale-70 py-2">
+            <a
+              href="https://docs.google.com/document/d/1sfMxuROAqNq3BNNYibdaZOtOBqyusFPQcGpmkgBaFpk/export?format=pdf"
+              download="cv.pdf"
+              class="text-decoration-none text-black"
+            >
+              Dowload CV</a
+            >
+          </button>
         </div>
       </div>
     </section>
@@ -96,8 +103,16 @@
               aspernatur aut odit aut fugit, sed quia consequuntur
             </p>
             <div class="buttons">
-              <button class="btn btn-warning me-2 scale-70">Download Cv</button>
-              <button class="btn btn-outline-warning">Portifolio</button>
+              <button class="btn btn-warning me-2 scale-70">
+                <a
+                  href="https://docs.google.com/document/d/1sfMxuROAqNq3BNNYibdaZOtOBqyusFPQcGpmkgBaFpk/export?format=pdf"
+                  download="cv.pdf"
+                  class="text-decoration-none text-black"
+                >
+                  Dowload CV</a
+                >
+              </button>
+              <button class="btn btn-outline-warning" onclick="window.open(`https://docs.google.com/document/d/1MV86ZamBFqDqHGZiuhBEW1mRgTAn8HswZjBvMZzu578/edit?usp=sharing`, `_blank`)">Portifolio</button>
             </div>
           </div>
         </div>
@@ -453,6 +468,7 @@
           $(this).addClass("active");
         });
       });
+
     </script>
   </body>
 </html>
