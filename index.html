@@ -87,8 +87,11 @@
         <div class="row align-items-center">
           <div class="col-md-6 rounded-3">
             <img
-            src="https://www.shutterstock.com/shutterstock/photos/429982918/display_1500/stock-photo-this-is-my-usual-spot-in-the-cafe-429982918.jpg""
-            alt="profile" class="img-fluid py-5 " style="max-width: 550px" />
+              src="https://www.shutterstock.com/shutterstock/photos/429982918/display_1500/stock-photo-this-is-my-usual-spot-in-the-cafe-429982918.jpg"
+              alt="profile"
+              class="img-fluid py-5"
+              style="max-width: 550px"
+            />
           </div>
           <div class="col-md-6">
             <h1 class="text-warning pt-3">About me</h1>
@@ -112,7 +115,12 @@
                   Dowload CV</a
                 >
               </button>
-              <button class="btn btn-outline-warning" onclick="window.open(`https://docs.google.com/document/d/1MV86ZamBFqDqHGZiuhBEW1mRgTAn8HswZjBvMZzu578/edit?usp=sharing`, `_blank`)">Portifolio</button>
+              <button
+                class="btn btn-outline-warning"
+                onclick="window.open(`https://www.canva.com/design/DAGCvyyCF9w/CZfumo4lXBm5rhkkprXtRQ/view?utm_content=DAGCvyyCF9w&utm_campaign=designshare&utm_medium=link&utm_source=editor`, `_blank`)"
+              >
+                Portifolio
+              </button>
             </div>
           </div>
         </div>
@@ -460,7 +468,7 @@
           } else if (selectedCategory == "development") {
             $(`.development`).show();
           } else {
-            $(`.service_card [data-category="${selectedCategory}"]`).show();
+            $(`.service_card`).show();
           }
 
           // Update active tab styling
@@ -468,7 +476,6 @@
           $(this).addClass("active");
         });
       });
-
     </script>
   </body>
 </html>
